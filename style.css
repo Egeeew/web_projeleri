@@ -1,0 +1,86 @@
+.düğmeler {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+  
+.düğmeler_satır_1 {
+    display: flex;
+    justify-content:start;
+    width: 100%;
+    margin-bottom: 2px;
+}
+  
+.dugme, .dugme_islem {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  
+.dugme {
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Cascadia Code';
+}
+
+.dugme_islem {
+    background-color: bisque;
+    font-family: 'Cascadia Code';
+    cursor: pointer;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Cascadia Code';
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    background: linear-gradient(220deg, #0d00ff, #000000, #00ff22);
+    justify-content: center;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.sonuc {
+    height: 50px;
+    width: 232px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    font-size: 1.8em;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.dıs_kutu{
+    height: 340px;
+    width: 260px;
+    backdrop-filter: blur(5.5);
+    -webkit-backdrop-filter: blur(5.5);
+    background: rgba(255, 255, 255, 0.55);
+    border: 4px solid;
+    border-radius: 20px;
+}
+
+.dugme_islem:active, .dugme_islem:hover {
+    background-color: rgba(91, 57, 15, 0.50);
+    color: #fff;
+}
+
+.dugme:active, .dugme:hover {
+    background-color: rgba(255, 255, 255, 0.50);
+}
